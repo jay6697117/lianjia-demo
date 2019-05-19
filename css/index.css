@@ -1,0 +1,614 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body,
+form {
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  color: #444;
+  line-height: 1.6;
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #259;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+button,
+input {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 13px 15px;
+  outline: 0;
+  color: #444;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+button:focus,
+input:focus {
+  border-color: #00ae66;
+}
+
+input.shadow {
+  border: 0;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+button.primary {
+  color: #fff;
+  background: #00ae66;
+}
+
+.block {
+  display: block;
+  width: 100%;
+}
+
+.row:before,
+.row:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/*.stretch {*/
+/*margin-left: -5px;*/
+/*margin-right: -5px;*/
+/*}*/
+
+.col {
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.col-24 {
+  width: 100%;
+}
+
+.col-23 {
+  width: 95.83333333333334%;
+}
+
+.col-22 {
+  width: 91.66666666666667%;
+}
+
+.col-21 {
+  width: 87.5%;
+}
+
+.col-20 {
+  width: 83.33333333333334%;
+}
+
+.col-19 {
+  width: 79.16666666666667%;
+}
+
+.col-18 {
+  width: 75%;
+}
+
+.col-17 {
+  width: 70.83333333333334%;
+}
+
+.col-16 {
+  width: 66.66666666666667%;
+}
+
+.col-15 {
+  width: 62.50000000000001%;
+}
+
+.col-14 {
+  width: 58.333333333333336%;
+}
+
+.col-13 {
+  width: 54.16666666666667%;
+}
+
+.col-12 {
+  width: 50%;
+}
+
+.col-11 {
+  width: 45.833333333333336%;
+}
+
+.col-10 {
+  width: 41.66666666666667%;
+}
+
+.col-9 {
+  width: 37.5%;
+}
+
+.col-8 {
+  width: 33.333333333333336%;
+}
+
+.col-7 {
+  width: 29.166666666666668%;
+}
+
+.col-6 {
+  width: 25%;
+}
+
+.col-5 {
+  width: 20.833333333333336%;
+}
+
+.col-4 {
+  width: 16.666666666666668%;
+}
+
+.col-3 {
+  width: 12.5%;
+}
+
+.col-2 {
+  width: 8.333333333333334%;
+}
+
+.col-1 {
+  width: 4.166666666666667%;
+}
+
+.container {
+  overflow: auto;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: right;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.input-group > * {
+  border-radius: 0;
+  border-right-width: 0;
+}
+
+.input-group > *:first-child {
+  border-radius: 3px 0 0 3px;
+}
+
+.input-group > *:last-child {
+  border-radius: 0 3px 3px 0;
+  border-right-width: 1px;
+}
+
+.desc {
+  color: #666;
+}
+
+.first-screen {
+  color: #fff;
+  background: #666;
+  background-image: url(../img/first-screen-bg.jpg);
+  -webkit-background-size: cover;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav {
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+.nav a {
+  color: inherit;
+  padding: 2px 5px;
+  display: inline-block;
+}
+
+.nav .auth {
+  font-size: 80%;
+  font-weight: 300;
+}
+
+.logo,
+.locale {
+  vertical-align: middle;
+}
+
+.logo {
+  width: 110px;
+  height: 40px;
+  background-image: url(../img/lianjia-sprite.png);
+  background-position: -16px -375px;
+}
+
+.locale {
+  background: rgba(0, 0, 0, 0.4);
+  display: inline-block;
+  padding: 3px 6px;
+  font-size: 70%;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+
+.locale-icon {
+  width: 12px;
+  height: 15px;
+  display: inline-block;
+  background-image: url(../img/lianjia-sprite.png);
+  background-position: -188px -19px;
+}
+
+.locale > * {
+  vertical-align: top;
+}
+
+.centered {
+  margin-top: 70px;
+  text-align: center;
+}
+
+#heading {
+  line-height: 1;
+  margin-bottom: 40px;
+}
+
+#heading h1 {
+  margin: 0;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+#heading .sub-heading {
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+#search {
+  /*background: #000;*/
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  margin-bottom: 120px;
+}
+
+#search .cat-group {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#search .cat {
+  padding: 0 5px;
+  display: inline-block;
+}
+
+#search .cat.active {
+  color: #fff;
+}
+
+#search .pointer {
+  position: relative;
+  top: 2px;
+  left: 5px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #ffffff transparent;
+}
+
+.search-bar {
+  font-size: 0;
+  height: 45px;
+  /* 伸缩布局 */
+  display: flex;
+  /* 主轴的方向 */
+  flex-direction: row;
+  /* 主轴上子项的对齐方式 */
+  justify-content: center;
+  /* 侧轴上子项的对齐方式 */
+  align-items: center;
+}
+
+.search-bar input {
+  flex: 1;
+  height: 100%;
+}
+
+.search-bar button {
+  min-width: 120px;
+  width: 120px;
+  height: 100%;
+}
+
+.anno {
+  margin: 10px 0;
+  font-size: 80%;
+}
+
+.anno * {
+  color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+}
+
+.main > * {
+  padding: 20px 0;
+}
+
+.support {
+  text-align: center;
+}
+
+.support .thumbnail {
+  padding: 10px 0;
+}
+
+.support .thumbnail img {
+  max-width: 60px;
+}
+
+.support .detail > * {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.support .title {
+  font-size: 120%;
+}
+
+.support .desc,
+.card-group .with-info .info,
+.muted,
+.card .desc {
+  color: #aaa;
+}
+
+.app {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: url(../img/bg-app.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.app .left {
+  max-width: 50%;
+}
+
+.app .left > * {
+  margin-bottom: 20px;
+}
+
+.slogan .title,
+.app .title {
+  font-size: 500%;
+  font-weight: bold;
+  /*margin-bottom: 20px;*/
+}
+
+.slogan .sub-title,
+.app .sub-title {
+  font-size: 400%;
+  font-weight: lighter;
+}
+
+.slogan .title,
+.slogan .sub-title,
+.app .title,
+.app .sub-title {
+  line-height: 1;
+}
+
+.app .download button {
+  width: 100%;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.head {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.head .title {
+  font-size: 260%;
+  font-weight: bold;
+}
+
+.head .sub-title {
+  font-size: 200%;
+  font-weight: lighter;
+}
+
+.head .right .link-group {
+  font-size: 90%;
+  color: #666;
+}
+
+.head .right a {
+  color: inherit;
+}
+
+.card-group.dim {
+  background: #eee;
+}
+
+.card-group .with-info .col > * {
+  margin-bottom: 10px;
+}
+
+.card.shadow {
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card.bg {
+  text-align: center;
+  position: relative;
+  color: #fff;
+}
+
+.card.bg .text {
+  z-index: 1;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  font-size: 130%;
+}
+
+.card.bg .title {
+  font-weight: bold;
+}
+
+.card.bg .price {
+  color: #fff2ab;
+}
+
+.card.bg:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.card {
+  background: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.card.bold {
+  font-weight: bold;
+}
+
+.card .text > * {
+  margin-bottom: 3px;
+}
+
+.card .text {
+  padding: 10px;
+}
+
+.slogan {
+  background-image: url(../img/slogan-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.slogan .title {
+  font-size: 350%;
+}
+
+.slogan .sub-title {
+  font-size: 260%;
+}
+
+.slogan .right > * {
+  margin-bottom: 10px;
+}
+
+.slogan .query {
+  position: relative;
+}
+
+.slogan .query button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+  background: transparent;
+  color: #aaa;
+}
+
+.footer {
+  background: #444;
+  color: #aaa;
+}
+
+.footer a,
+.footer .anchor {
+  display: inline-block;
+  color: inherit;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.footer .container > * {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid #555;
+}
+
+.footer .shortcut {
+  color: #fff;
+}
+
+.footer .shortcut a,
+.footer .shortcut .anchor {
+  padding: 5px;
+}
+
+.footer .tab-group {
+  margin-bottom: 10px;
+}
+
+.footer .tab {
+  display: inline-block;
+  padding: 5px 10px;
+  background: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.footer .meta {
+  min-height: 100px;
+}
